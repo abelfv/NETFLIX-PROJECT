@@ -1,0 +1,253 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url(sources/images/header.png);
+    background-size: cover;
+    background-position: center;
+    padding: 25px 65px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo {
+    width: 200px;
+    cursor: pointer;
+}
+
+nav button {
+    width: 150px;
+    border-radius: 5px;
+    background: rgb(255, 0, 13);
+    color: rgb(244, 250, 255);
+    padding: 10px;
+    font-size: 15px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+nav select {
+    width: 120px;
+    height: 2.5em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+    color: white;
+}
+
+select>option:enabled {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header-cont {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    top: 30em;
+}
+
+.header-cont h1 {
+    font-size: 70px;
+    line-height: 60px;
+    max-width: 650px;
+}
+
+.header-cont h4 {
+    font-size: 18px;
+    line-height: 50px;
+    max-width: 650px;
+}
+
+.signup {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.signup input {
+    flex: auto;
+    border: 0cm;
+    padding: 25px;
+}
+
+.signup button {
+    background: rgb(255, 0, 0);
+    border: 0;
+    outline: 0cm;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 25px 45px;
+}
+
+.body-content {
+    padding: 50px 10%;
+    font-size: 20px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 70px 0px;
+}
+
+.columms,
+.column-img {
+    flex-basis: 50%;
+    margin-bottom: 15px;
+}
+
+.column-img img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.body-content h2 {
+    font-size: 45px;
+    font-weight: 650px;
+    margin-bottom: 10px;
+}
+
+.question-section {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 15px;
+}
+
+.question-section h2 {
+    font-weight: 270px;
+    font-size: 50px;
+}
+
+.plegable {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 650px;
+}
+
+.plegable li {
+    list-style: none;
+    width: 100%;
+    padding: 3px;
+}
+
+.plegable li label {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    font-size: 25px;
+    background: rgb(68, 68, 68);
+    margin-bottom: 1px;
+    cursor: pointer;
+    position: relative;
+}
+
+label::after {
+    content: '+';
+    font-size: 40px;
+    position: absolute;
+    right: 25px;
+    transition: transform 0.7s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.plegable .content {
+    background: rgb(68, 68, 68);
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s;
+}
+
+.plegable input[type="radio"]:checked+label+.content {
+    max-height: 650px;
+    padding: 25px;
+    text-align: justify;
+}
+
+.plegable input[type="radio"]:checked+label::after {
+    transform: rotate(135deg);
+}
+
+.question-section .signup {
+    max-width: 690px;
+    margin: 20px auto 50px;
+}
+
+/*----------- FOOTER SECTION BY ABEL DEV -------- */
+
+.footer {
+    padding: 50px 30px 20px 30px;
+    border-top: 5px solid rgb(61, 59, 59);
+    color: rgb(153, 152, 152);
+}
+
+.footer h2 {
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 30px;
+}
+
+.columna-footer {
+    padding: 25px;
+}
+
+.footer .columna-footer a {
+    display: block;
+    color: rgb(138, 139, 139);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.filas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a:link {
+    COLOR: red;
+    text-decoration: none;
+}
+
+a:hover {
+    COLOR: blue;
+    text-decoration: underline;
+}
+
+.footer select {
+    width: 120px;
+    height: 2.5em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));
+    color: white;
+}
+
+select>option:enabled {
+    background-color: rgba(0, 0, 0, 0.9);
+}
